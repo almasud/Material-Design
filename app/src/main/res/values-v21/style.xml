@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Only for API 21 (Lollipop) and above version -->
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>
