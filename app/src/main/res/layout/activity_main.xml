@@ -6,49 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/name"
+    <TextView
+        android:id="@+id/mainActivityTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter your name..."
+        android:text="@string/example_of_material_design"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginVertical="20dp"/>
-
-    <RadioGroup
-        android:id="@+id/genderRadioButtonGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
-        android:layout_alignStart="@+id/name"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/radioButtonMale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male" />
-
-        <RadioButton
-            android:id="@+id/radioButtonFemale"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Female" />
-    </RadioGroup>
-
-    <CheckBox
-        android:id="@+id/checkBoxHumanEnsure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/genderRadioButtonGroup"
-        android:text="I am not a robot"
-        android:layout_alignStart="@+id/genderRadioButtonGroup"/>
+        android:layout_marginVertical="10dp"/>
 
     <Button
-        android:id="@+id/buttonSubmit"
+        android:id="@+id/buttonColorPalette"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBoxHumanEnsure"
-        android:text="Submit"
+        android:text="@string/color_palette"
+        android:layout_below="@+id/mainActivityTitle"
         android:textAllCaps="false"
         android:layout_centerHorizontal="true"/>
 

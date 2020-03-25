@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Material Design</string>
+    <string name="color_palette">Color Palette</string>
+    <string name="example_of_color_palette">Example of Color Palette</string>
+    <string name="example_of_material_design">Example of Material Design</string>
+    <string name="toolbar">Toolbar</string>
 </resources>

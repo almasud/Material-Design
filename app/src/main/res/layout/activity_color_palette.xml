@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorPaletteActivity">
+
+    <TextView
+        android:id="@+id/colorPaletteActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/example_of_color_palette"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorPaletteActivityTitle"
+        android:hint="Enter your name..."
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/genderRadioButtonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxHumanEnsure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderRadioButtonGroup"
+        android:text="I am not a robot"
+        android:layout_alignStart="@+id/genderRadioButtonGroup"/>
+
+    <Button
+        android:id="@+id/buttonColorPalette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxHumanEnsure"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
