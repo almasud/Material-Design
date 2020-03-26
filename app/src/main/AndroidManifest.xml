@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppMaterialTheme">
-        <activity android:name=".ColorPaletteActivity"></activity>
+        <activity android:name=".ContextualMenuActivity"></activity>
+        <activity android:name=".ToolbarAsActionbarActivity" />
+        <activity android:name=".StandaloneToolbarActivity" />
+        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".ColorPaletteActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

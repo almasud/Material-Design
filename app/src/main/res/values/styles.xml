@@ -6,7 +6,7 @@
     </style>
 
     <!-- Parent theme for all devices (with bellow to above API 21 (Lollipop)). -->
-    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light">
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -15,6 +15,20 @@
         <item name="colorControlHighlight">#edea0d</item>
         <item name="colorButtonNormal">#f955f3</item>
         <item name="colorControlActivated">#0cf427</item>
+    </style>
+
+    <!-- Customize toolbar theme -->
+    <style name="MyToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Text color of Toolbar title -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- Background color of popup menu (3 dots) and navigation drawer icons -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!-- Customize popup (3 dots) menu theme -->
+    <style name="MyPopupMenuTheme" parent="ThemeOverlay.AppCompat.Light">
+<!--        <item name="android:background">@color/popupMenuBackground</item>-->
+        <item name="android:textColorPrimary">@color/gray_800</item>
     </style>
 
 </resources>

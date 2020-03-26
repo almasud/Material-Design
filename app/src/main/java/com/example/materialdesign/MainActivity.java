@@ -1,11 +1,10 @@
 package com.example.materialdesign;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.materialdesign.databinding.ActivityMainBinding;
 
@@ -25,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             // Implement the feature without material design
         }
 
-        mViewBinding.buttonColorPalette.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ColorPaletteActivity.class)));
+        mViewBinding.buttonColorPalette.setOnClickListener(view -> startActivity(new Intent(this, ColorPaletteActivity.class)));
+        mViewBinding.buttonToolbar.setOnClickListener(view -> startActivity(new Intent(this, ToolbarActivity.class)));
     }
 }

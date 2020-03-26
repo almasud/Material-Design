@@ -4,4 +4,14 @@
     <string name="example_of_color_palette">Example of Color Palette</string>
     <string name="example_of_material_design">Example of Material Design</string>
     <string name="toolbar">Toolbar</string>
+    <string name="example_of_toolbar">Example of Toolbar</string>
+    <string name="standalone_toolbar">Standalone Toolbar</string>
+    <string name="toolbar_as_actionbar">Toolbar as Actionbar</string>
+    <string name="contextual_menu">Contextual Menu</string>
+    <string name="save">Save</string>
+    <string name="settings">Settings</string>
+    <string name="email">Email</string>
+    <string name="camera">Camera</string>
+    <string name="web_search">Web Search</string>
+    <string name="help">Help</string>
 </resources>

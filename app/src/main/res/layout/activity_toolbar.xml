@@ -4,37 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ToolbarActivity">
 
     <TextView
-        android:id="@+id/mainActivityTitle"
+        android:id="@+id/toolbarActivityTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="@string/example_of_material_design"
-        android:textSize="22sp"/>
+        android:gravity="center_horizontal"
+        android:padding="50dp"
+        android:text="@string/example_of_toolbar"
+        android:textSize="24sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mainActivityTitle"
         android:orientation="vertical"
+        android:layout_below="@+id/toolbarActivityTitle"
         android:paddingHorizontal="20dp">
 
         <Button
-            android:id="@+id/buttonColorPalette"
+            android:id="@+id/buttonStandaloneToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/color_palette"
+            android:text="@string/standalone_toolbar"
             android:textAllCaps="false"/>
 
         <Button
-            android:id="@+id/buttonToolbar"
+            android:id="@+id/buttonToolbarAsActionbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/toolbar"
+            android:text="@string/toolbar_as_actionbar"
             android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonContextualMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contextual_menu"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 
 </RelativeLayout>
