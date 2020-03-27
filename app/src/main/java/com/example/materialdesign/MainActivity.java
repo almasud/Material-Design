@@ -26,5 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         mViewBinding.buttonColorPalette.setOnClickListener(view -> startActivity(new Intent(this, ColorPaletteActivity.class)));
         mViewBinding.buttonToolbar.setOnClickListener(view -> startActivity(new Intent(this, ToolbarsActivity.class)));
+        mViewBinding.buttonBasicComponents.setOnClickListener(view -> startActivity(new Intent(this, BasicComponentActivity.class)));
     }
 }

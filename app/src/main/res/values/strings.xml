@@ -17,4 +17,6 @@
     <string name="delete">Delete</string>
     <string name="cut">Cut</string>
     <string name="contextual_menu">Contextual Menu</string>
+    <string name="basic_components">Basic Components</string>
+    <string name="snackbar">Snackbar</string>
 </resources>
