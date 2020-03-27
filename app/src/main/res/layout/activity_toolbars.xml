@@ -40,7 +40,7 @@
             android:id="@+id/buttonContextualMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/contextual_menu"
+            android:text="@string/contextual_menu_toolbar"
             android:textAllCaps="false"/>
 
     </LinearLayout>

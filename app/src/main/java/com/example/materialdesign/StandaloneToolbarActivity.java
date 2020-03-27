@@ -19,7 +19,7 @@ public class StandaloneToolbarActivity extends AppCompatActivity {
         mViewBinding = ActivityToolbarBinding.inflate(getLayoutInflater());
         setContentView(mViewBinding.getRoot());
 
-        mToolbar = (Toolbar) mViewBinding.standaloneToolbar.getRoot();
+        mToolbar = (Toolbar) mViewBinding.toolbar.getRoot();
         // Set the standalone toolbar
         mToolbar.setTitle("Standalone toolbar");
         mToolbar.setSubtitle("by Abdullah Almasud");

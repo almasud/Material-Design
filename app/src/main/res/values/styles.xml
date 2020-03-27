@@ -11,10 +11,15 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
         <!-- When the bellow color is not defined then colorAccent is applied by default -->
         <item name="colorControlHighlight">#edea0d</item>
         <item name="colorButtonNormal">#f955f3</item>
         <item name="colorControlActivated">#0cf427</item>
+
+        <!-- Customize Action mode (used in contextual menu) theme -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/MyActionMode</item>
     </style>
 
     <!-- Customize toolbar theme -->
@@ -27,8 +32,21 @@
 
     <!-- Customize popup (3 dots) menu theme -->
     <style name="MyPopupMenuTheme" parent="ThemeOverlay.AppCompat.Light">
-<!--        <item name="android:background">@color/popupMenuBackground</item>-->
+<!--        <item name="android:background">@color/popup_menu_background</item>-->
         <item name="android:textColorPrimary">@color/gray_800</item>
+    </style>
+
+    <!-- Customize action mode style -->
+    <style name="MyActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/contextual_background</item>
+        <item name="titleTextStyle">@style/MyActionbarTitleStyle</item>
+        <!-- Change the default close icon of action mode -->
+<!--        <item name="actionModeCloseDrawable">@drawable/abc_vector_test</item>-->
+    </style>
+
+    <!-- Customize action bar title style -->
+    <style name="MyActionbarTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/contextual_text</item>
     </style>
 
 </resources>

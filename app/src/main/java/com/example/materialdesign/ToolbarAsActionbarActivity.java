@@ -21,7 +21,7 @@ public class ToolbarAsActionbarActivity extends AppCompatActivity {
         mViewBinding = ActivityToolbarBinding.inflate(getLayoutInflater());
         setContentView(mViewBinding.getRoot());
 
-        mToolbar = (Toolbar) mViewBinding.standaloneToolbar.getRoot();
+        mToolbar = (Toolbar) mViewBinding.toolbar.getRoot();
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("Actionbar Toolbar");
         getSupportActionBar().setSubtitle("by Abdullah Almasud");
