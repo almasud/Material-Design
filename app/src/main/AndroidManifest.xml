@@ -12,7 +12,7 @@
         <activity android:name=".ContextualMenuActivity"></activity>
         <activity android:name=".ToolbarAsActionbarActivity" />
         <activity android:name=".StandaloneToolbarActivity" />
-        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".ToolbarsActivity" />
         <activity android:name=".ColorPaletteActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

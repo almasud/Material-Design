@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.materialdesign.databinding.ActivityToolbarBinding;
+import com.example.materialdesign.databinding.ActivityToolbarsBinding;
 
-public class ToolbarActivity extends AppCompatActivity {
-    private ActivityToolbarBinding mViewBinding;
+public class ToolbarsActivity extends AppCompatActivity {
+    private ActivityToolbarsBinding mViewBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mViewBinding = ActivityToolbarBinding.inflate(getLayoutInflater());
+        mViewBinding = ActivityToolbarsBinding.inflate(getLayoutInflater());
         setContentView(mViewBinding.getRoot());
 
         mViewBinding.buttonStandaloneToolbar.setOnClickListener(view -> startActivity(new Intent(this, StandaloneToolbarActivity.class)));

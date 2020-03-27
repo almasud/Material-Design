@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.materialdesign.databinding.ActivityToolbarBinding;
+
 public class ContextualMenuActivity extends AppCompatActivity {
+    private ActivityToolbarBinding mViewBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contextual_menu);
+        mViewBinding = ActivityToolbarBinding.inflate(getLayoutInflater());
+        setContentView(mViewBinding.getRoot());
     }
 }
