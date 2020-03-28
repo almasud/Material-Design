@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:id="@+id/sharedTransitionReveal"
+    tools:context=".SharedElementActivity">
+
+    <include
+        android:id="@+id/sharedElementActivityToolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textSharedElementTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/activity_transition_supported_note"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

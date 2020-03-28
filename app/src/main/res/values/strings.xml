@@ -24,6 +24,12 @@
     <string name="custom_ripple_with_border">Custom ripple with border</string>
     <string name="custom_ripple_without_border">Custom ripple without border</string>
     <string name="animations">Animations</string>
-    <string name="ripple_effects">Ripple Effects</string>
-    <string name="ripple_supported_note">N.B: The version of android bellow API 21 (Lollipop) is not supported ripple with borderless and custom ripple.\nGo the mentioned android version or above to see the ripple with borderless and custom ripple.</string>
+    <string name="ripple_effects">Ripple Effects\n(Touch feedback animation)</string>
+    <string name="ripple_supported_note">Ripple with borderless and custom ripple is not supported in android version API 21 (Lollipop) and bellow.</string>
+    <string name="activity_transition_supported_note">Activity transition is not supported in android version API 21 (Lollipop) and bellow.</string>
+    <string name="author">Almasud</string>
+    <string name="shared_element_transition_text">Activity transition is supported only in android version API 21 (Lollipop) and above.</string>
+    <string name="go_back">Go back</string>
+    <string name="shared_element_transition">Shared Element\nTransition</string>
+    <string name="activity_transition">Activity Transition</string>
 </resources>
