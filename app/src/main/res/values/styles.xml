@@ -13,7 +13,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <!-- When the bellow color is not defined then colorAccent is applied by default -->
-        <item name="colorControlHighlight">#edea0d</item>
+        <item name="colorControlHighlight">#F44336</item>
         <item name="colorButtonNormal">#f955f3</item>
         <item name="colorControlActivated">#0cf427</item>
 

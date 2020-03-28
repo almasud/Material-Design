@@ -19,4 +19,11 @@
     <string name="contextual_menu">Contextual Menu</string>
     <string name="basic_components">Basic Components</string>
     <string name="snackbar">Snackbar</string>
+    <string name="ripple_with_border">Ripple with border</string>
+    <string name="ripple_without_border">Ripple without border</string>
+    <string name="custom_ripple_with_border">Custom ripple with border</string>
+    <string name="custom_ripple_without_border">Custom ripple without border</string>
+    <string name="animations">Animations</string>
+    <string name="ripple_effects">Ripple Effects</string>
+    <string name="ripple_supported_note">N.B: The version of android bellow API 21 (Lollipop) is not supported ripple with borderless and custom ripple.\nGo the mentioned android version or above to see the ripple with borderless and custom ripple.</string>
 </resources>

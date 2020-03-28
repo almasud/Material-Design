@@ -37,10 +37,17 @@
             android:textAllCaps="false"/>
 
         <Button
-            android:id="@+id/button_basic_components"
+            android:id="@+id/buttonBasicComponents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/basic_components"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonAnimations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/animations"
             android:textAllCaps="false"/>
 
     </LinearLayout>
