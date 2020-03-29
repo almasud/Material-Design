@@ -13,6 +13,18 @@
         layout="@layout/toolbar"/>
 
     <TextView
+        android:id="@+id/textDescriptionReveal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/sharedElementActivityToolbar"
+        android:layout_margin="10dp"
+        android:background="#f0ce11"
+        android:textColor="@android:color/white"
+        android:elevation="4dp"
+        android:visibility="invisible"/>
+
+    <TextView
         android:id="@+id/sharedActivityTransitionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,10 +64,10 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/sharedActivityText"
+        android:id="@+id/descriptionActivitySharedTransition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shared_element_transition_text"
+        android:text="Shared element transition text here..."
         android:layout_below="@id/sharedActivityElement"
         android:textSize="14sp"
         android:layout_margin="10dp"/>
@@ -67,7 +79,7 @@
         android:text="@string/go_back"
         android:drawableStart="@drawable/ic_arrow_back_white_24dp"
         android:textColor="@android:color/white"
-        android:layout_below="@+id/sharedActivityText"
+        android:layout_below="@+id/descriptionActivitySharedTransition"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

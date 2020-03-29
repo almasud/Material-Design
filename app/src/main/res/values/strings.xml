@@ -29,7 +29,9 @@
     <string name="activity_transition_supported_note">Activity transition is not supported in android version API 21 (Lollipop) and bellow.</string>
     <string name="author">Almasud</string>
     <string name="shared_element_transition_text">Activity transition is supported only in android version API 21 (Lollipop) and above.</string>
+    <string name="circular_reveal_animation_text">Click on the screen to see the toggle effect of Circular Reveal Animation.</string>
     <string name="go_back">Go back</string>
-    <string name="shared_element_transition">Shared Element\nTransition</string>
+    <string name="shared_element_transition">Shared Element Transition</string>
+    <string name="circular_reveal_animation">Circular Reveal Animation</string>
     <string name="activity_transition">Activity Transition</string>
 </resources>

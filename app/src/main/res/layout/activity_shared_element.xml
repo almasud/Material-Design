@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:gravity="center_horizontal"
     android:id="@+id/sharedTransitionReveal"
     tools:context=".SharedElementActivity">
 
@@ -14,12 +13,69 @@
         layout="@layout/toolbar"/>
 
     <TextView
-        android:id="@+id/textSharedElementTransition"
+        android:id="@+id/textDescriptionReveal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/sharedElementActivityToolbar"
+        android:layout_margin="10dp"
+        android:background="#f0ce11"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/sharedActivityTransitionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/activity_transition"
+        android:textSize="30sp"
+        android:layout_below="@+id/sharedElementActivityToolbar"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/sharedActivityElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_marginHorizontal="10dp"
-        android:text="@string/activity_transition_supported_note"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"/>
+        android:layout_below="@+id/sharedActivityTransitionText">
+
+        <ImageView
+            android:id="@+id/imageSharedLogo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="175dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/imageSharedProfile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="175dp"
+            android:src="@drawable/almasud" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionActivitySharedTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared element transition text here..."
+        android:layout_below="@id/sharedActivityElement"
+        android:textSize="14sp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/buttonSharedActivityBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back"
+        android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/descriptionActivitySharedTransition"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
