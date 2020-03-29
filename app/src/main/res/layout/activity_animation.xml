@@ -10,6 +10,9 @@
 
     <include
         android:id="@+id/animationActivityToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         layout="@layout/toolbar"/>
 
     <Button
@@ -17,7 +20,8 @@
         android:layout_height="wrap_content"
         android:text="@string/ripple_effects"
         android:textAllCaps="false"
-        android:layout_margin="20dp"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
         android:onClick="toRippleEffects"/>
 
     <LinearLayout
@@ -26,7 +30,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
         android:onClick="sharedElementTransition">
 
         <ImageView
@@ -43,13 +48,53 @@
             android:textColor="@android:color/black"
             android:gravity="center"
             android:textSize="22sp"
-            android:layout_margin="10dp" />
+            android:layout_margin="5dp" />
 
         <ImageView
             android:id="@+id/imageSharedProfile"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/almasud" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_n_exit_transition"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textSize="18sp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explode_transition"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:onClick="sharedElementTransition">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/java_code"
+            android:onClick="explodeTransitionByCode"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/xml"
+            android:onClick="explodeTransitionByXML"/>
 
     </LinearLayout>
 

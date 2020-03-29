@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/sharedTransitionReveal"
+    tools:context=".SharedElementActivity">
+
+    <include
+        android:id="@+id/transitionActivityToolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/transitionActivityTransitionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mahin_and_almasud"
+        android:textSize="24sp"
+        android:layout_below="@+id/transitionActivityToolbar"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/transitionActivityElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/transitionActivityTransitionTitle">
+
+        <ImageView
+            android:id="@+id/imageSharedOtherPic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="175dp"
+            android:src="@drawable/mahin" />
+
+        <ImageView
+            android:id="@+id/imageSharedAuthorPic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="175dp"
+            android:src="@drawable/almasud" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transitionActivityDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transition activity description here..."
+        android:layout_below="@id/transitionActivityElement"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textSize="14sp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/buttonTransitionActivityBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_back"
+        android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/transitionActivityDescription"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

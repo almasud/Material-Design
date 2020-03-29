@@ -40,11 +40,16 @@ public class SharedElementActivity extends AppCompatActivity {
                 new StringBuilder(getString(R.string.circular_reveal_animation_text))
                         .append(" N.B: ").append(getString(R.string.shared_element_transition_text)));
 
+        // Circular reveal animation of Activity transition
         mViewBinding.sharedTransitionReveal.setOnClickListener(this::makeCircularRevealAnimation);
 
-        mViewBinding.buttonSharedActivityBack.setOnClickListener(view -> {
-            supportFinishAfterTransition();
-        });
+        mViewBinding.buttonSharedActivityBack.setOnClickListener(view -> supportFinishAfterTransition());
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        supportFinishAfterTransition();
+        return true;
     }
 
     private void makeCircularRevealAnimation(View view) {
@@ -94,11 +99,5 @@ public class SharedElementActivity extends AppCompatActivity {
                 Toast.makeText(this, getString(R.string.activity_transition_supported_note), Toast.LENGTH_LONG).show();
             }
         }
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        supportFinishAfterTransition();
-        return true;
     }
 }

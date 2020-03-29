@@ -27,10 +27,18 @@ public class AnimationActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Material Animation");
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
+
+    // Ripple effect of Touch feedback animation
     public void toRippleEffects(View view) {
         startActivity(new Intent(this, RippleEffectActivity.class));
     }
 
+    // Shared element transition of Activity transition
     public void sharedElementTransition(View view) {
         Pair[] pairs = new Pair[3];
         pairs[0] = new Pair<>(mViewBinding.imageSharedLogo, "sharedLogo");
@@ -46,9 +54,25 @@ public class AnimationActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        finish();
-        return true;
+    // Enter & Exit transition of Activity transition
+    // Explode transition transition of Enter & Exit transition
+    public void explodeTransitionByCode(View view) {
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent intent = new Intent(this, TransitionActivity.class);
+        intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.ExplodeJava);
+        intent.putExtra(Constant.KEY_ANIMATION_TITLE,
+                (CharSequence) new StringBuilder(getResources().getString(R.string.explode_transition))
+                        .append(" by ").append(getResources().getString(R.string.java_code)));
+        startActivity(intent, optionsCompat.toBundle());
+    }
+
+    public void explodeTransitionByXML(View view) {
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent intent = new Intent(this, TransitionActivity.class);
+        intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.ExplodeXML);
+        intent.putExtra(Constant.KEY_ANIMATION_TITLE,
+                (CharSequence) new StringBuilder(getResources().getString(R.string.explode_transition))
+                        .append(" by ").append(getResources().getString(R.string.xml)));
+        startActivity(intent, optionsCompat.toBundle());
     }
 }

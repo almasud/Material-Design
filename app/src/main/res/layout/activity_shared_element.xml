@@ -30,7 +30,7 @@
         android:text="@string/activity_transition"
         android:textSize="30sp"
         android:layout_below="@+id/sharedElementActivityToolbar"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:gravity="center"
         android:layout_centerHorizontal="true"/>
 
@@ -39,22 +39,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
         android:layout_below="@+id/sharedActivityTransitionText">
 
         <ImageView
             android:id="@+id/imageSharedLogo"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="175dp"
+            android:layout_height="150dp"
             android:src="@mipmap/ic_launcher_round" />
 
         <ImageView
             android:id="@+id/imageSharedProfile"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="175dp"
+            android:layout_height="150dp"
             android:src="@drawable/almasud" />
 
     </LinearLayout>
@@ -65,6 +64,7 @@
         android:layout_height="wrap_content"
         android:text="Shared element transition text here..."
         android:layout_below="@id/sharedActivityElement"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
         android:textSize="14sp"
         android:layout_margin="10dp"/>
 

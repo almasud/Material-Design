@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppMaterialTheme">
+        <activity android:name=".TransitionActivity"></activity>
         <activity android:name=".SharedElementActivity" />
         <activity android:name=".RippleEffectActivity" />
         <activity android:name=".AnimationActivity" />
