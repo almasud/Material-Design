@@ -1,14 +1,18 @@
 package com.example.materialdesign;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Explode;
+import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
+import android.view.Gravity;
 import android.view.Window;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
 import com.example.materialdesign.databinding.ActivityTransitionBinding;
 
@@ -38,8 +42,11 @@ public class TransitionActivity extends AppCompatActivity {
 
         // Set the description text
         mViewBinding.transitionActivityDescription.setText(
-                new StringBuilder(getString(R.string.explode_transition_text))
-                        .append(" N.B: ").append(getString(R.string.shared_element_transition_text)));
+                new StringBuilder(getString(R.string.enter_and_exit_transition))
+                        .append(getString(R.string.explode_transition_text))
+                        .append(getString(R.string.slide_transition_text))
+                        .append(" N.B: ")
+                        .append(getString(R.string.shared_element_transition_text)));
 
         //Set the back button click event
         mViewBinding.buttonTransitionActivityBack.setOnClickListener(view -> supportFinishAfterTransition());
@@ -54,19 +61,36 @@ public class TransitionActivity extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("RtlHardcoded")
     private void initTransition(Constant.TransitionType transitionType) {
         switch (transitionType) {
             case ExplodeJava:
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-                    Explode enterTransition = new Explode();
-                    enterTransition.setDuration(getResources().getInteger(R.integer.animation_duration_long));
-                    getWindow().setEnterTransition(enterTransition);
+                    Explode explode = new Explode();
+                    explode.setDuration(getResources().getInteger(R.integer.animation_duration_long));
+                    // Interpolator define the rate of changes of animation and the basic animation effects.
+                    explode.setInterpolator(new FastOutSlowInInterpolator());
+                    getWindow().setEnterTransition(explode);
                 }
                 break;
             case ExplodeXML:
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-                    Transition enterTransition = TransitionInflater.from(this).inflateTransition(R.transition.explode);
-                    getWindow().setEnterTransition(enterTransition);
+                    Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.explode);
+                    getWindow().setEnterTransition(transition);
+                }
+                break;
+            case SlideJava:
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    Slide slide = new Slide();
+                    slide.setDuration(getResources().getInteger(R.integer.animation_duration_long));
+                    slide.setSlideEdge(Gravity.LEFT);
+                    getWindow().setEnterTransition(slide);
+                }
+                break;
+            case SlideXML:
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.slide);
+                    getWindow().setEnterTransition(transition);
                 }
                 break;
         }

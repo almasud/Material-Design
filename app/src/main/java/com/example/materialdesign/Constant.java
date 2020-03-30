@@ -5,6 +5,6 @@ public class Constant {
     public static final String KEY_ANIMATION_TITLE = "animation_title";
 
     public enum TransitionType {
-        ExplodeJava, ExplodeXML
+        ExplodeJava, ExplodeXML, SlideJava, SlideXML
     }
 }

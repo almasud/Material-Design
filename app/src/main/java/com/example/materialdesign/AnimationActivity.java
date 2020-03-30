@@ -1,8 +1,10 @@
 package com.example.materialdesign;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,7 +57,7 @@ public class AnimationActivity extends AppCompatActivity {
     }
 
     // Enter & Exit transition of Activity transition
-    // Explode transition transition of Enter & Exit transition
+    // Explode transition of Enter & Exit transition
     public void explodeTransitionByCode(View view) {
         ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
         Intent intent = new Intent(this, TransitionActivity.class);
@@ -72,6 +74,27 @@ public class AnimationActivity extends AppCompatActivity {
         intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.ExplodeXML);
         intent.putExtra(Constant.KEY_ANIMATION_TITLE,
                 (CharSequence) new StringBuilder(getResources().getString(R.string.explode_transition))
+                        .append(" by ").append(getResources().getString(R.string.xml)));
+        startActivity(intent, optionsCompat.toBundle());
+    }
+
+    // Slide transition of Enter & Exit transition
+    public void slideTransitionByCode(View view) {
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent intent = new Intent(this, TransitionActivity.class);
+        intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.SlideJava);
+        intent.putExtra(Constant.KEY_ANIMATION_TITLE,
+                (CharSequence) new StringBuilder(getResources().getString(R.string.slide_transition))
+                        .append(" by ").append(getResources().getString(R.string.java_code)));
+        startActivity(intent, optionsCompat.toBundle());
+    }
+
+    public void slideTransitionByXML(View view) {
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent intent = new Intent(this, TransitionActivity.class);
+        intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.SlideXML);
+        intent.putExtra(Constant.KEY_ANIMATION_TITLE,
+                (CharSequence) new StringBuilder(getResources().getString(R.string.slide_transition))
                         .append(" by ").append(getResources().getString(R.string.xml)));
         startActivity(intent, optionsCompat.toBundle());
     }
