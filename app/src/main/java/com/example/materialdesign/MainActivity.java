@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.materialdesign.databinding.ActivityMainBinding;
 
@@ -17,6 +18,12 @@ public class MainActivity extends AppCompatActivity {
         mViewBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mViewBinding.getRoot());
 
+        // Set the toolbar
+        Toolbar toolbar = (Toolbar) mViewBinding.mainActivityToolbar.getRoot();
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(getResources().getString(R.string.example_of_material_design));
+        getSupportActionBar().setSubtitle("by Abdullah Almasud");
+
         // Check if we're running on android 5.0 (API 21) or higher
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             // Call material design APIs here
@@ -28,5 +35,6 @@ public class MainActivity extends AppCompatActivity {
         mViewBinding.buttonToolbar.setOnClickListener(view -> startActivity(new Intent(this, ToolbarsActivity.class)));
         mViewBinding.buttonBasicComponents.setOnClickListener(view -> startActivity(new Intent(this, BasicComponentActivity.class)));
         mViewBinding.buttonAnimations.setOnClickListener(view -> startActivity(new Intent(this, AnimationActivity.class)));
+        mViewBinding.buttonFloatingLabel.setOnClickListener(view -> startActivity(new Intent(this, FloatingLabelEditTextActivity.class)));
     }
 }

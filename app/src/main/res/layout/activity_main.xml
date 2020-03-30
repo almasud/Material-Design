@@ -6,21 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/mainActivityTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="@string/example_of_material_design"
-        android:textSize="22sp"/>
+    <include
+        android:id="@+id/mainActivityToolbar"
+        layout="@layout/toolbar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mainActivityTitle"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainActivityToolbar"
         android:orientation="vertical"
-        android:paddingHorizontal="20dp">
+        android:layout_margin="20dp">
 
         <Button
             android:id="@+id/buttonColorPalette"
@@ -48,6 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/animations"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonFloatingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/floating_label_for_edit_text"
             android:textAllCaps="false"/>
 
     </LinearLayout>

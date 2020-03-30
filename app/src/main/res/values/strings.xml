@@ -45,4 +45,9 @@
     <string name="explode_transition">Explode Transition</string>
     <string name="slide_transition">Slide transition</string>
     <string name="fade_transition">Fade transition</string>
+    <string name="floating_label_for_edit_text">Floating label\n(For edit text)</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_here">Sign Up Here</string>
 </resources>
