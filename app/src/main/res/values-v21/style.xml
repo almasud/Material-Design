@@ -4,8 +4,12 @@
     <!-- Only for API 21 (Lollipop) and above version -->
     <style name="AppMaterialTheme" parent="SuperMaterialTheme">
         <!-- Customize your theme here. -->
-        <!-- Enable window content transitions either specify here or in the activity -->
+        <!-- Window content transitions - either specify here or in the activity -->
 <!--        <item name="android:windowContentTransitions">true</item>-->
+
+        <!-- Transition overlap - either specify here or in the activity -->
+<!--        <item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+<!--        <item name="android:windowAllowReturnTransitionOverlap">false</item>-->
     </style>
 
 </resources>

@@ -24,8 +24,8 @@ public class TransitionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // For AppCompact (If we didn't enable transition in our theme) getWindow() must
-        // be called before calling setContentView()
+        // Window content transitions - For AppCompact  (If we didn't enable transition in our theme)
+        // getWindow() must be called before calling setContentView()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         }
@@ -51,10 +51,15 @@ public class TransitionActivity extends AppCompatActivity {
                         .append(" N.B: ")
                         .append(getString(R.string.shared_element_transition_text)));
 
-        //Set the back button click event
+        // Set the back button click event
         mViewBinding.buttonTransitionActivityBack.setOnClickListener(view -> supportFinishAfterTransition());
 
-        // Code for transition animation
+        // For overlap of entering this activity and exiting from other activity
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setAllowEnterTransitionOverlap(false);  // Either specify here or in the theme
+        }
+
+        // Set transition animations for this activity
         initTransition(transitionType);
     }
 

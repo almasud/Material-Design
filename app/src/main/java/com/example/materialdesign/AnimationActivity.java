@@ -1,10 +1,10 @@
 package com.example.materialdesign;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,16 +23,34 @@ public class AnimationActivity extends AppCompatActivity {
         mViewBinding = ActivityAnimationBinding.inflate(getLayoutInflater());
         setContentView(mViewBinding.getRoot());
 
+        // Set a toolbar for this activity
         Toolbar toolbar = (Toolbar) mViewBinding.animationActivityToolbar.getRoot();
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Material Animation");
+
+        // Set a transition animation for this activity
+        setupWindowAnimation();
     }
 
     @Override
     public boolean onSupportNavigateUp() {
         finish();
         return true;
+    }
+
+    private void setupWindowAnimation() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            Slide slide = new Slide();
+            slide.setDuration(getResources().getInteger(R.integer.animation_duration_long));
+            slide.setSlideEdge(Gravity.LEFT);
+            // Set re-enter transition that is executed when returning back to this activity.
+            getWindow().setReenterTransition(slide);
+            // Set the exit transition that execute when the activity is exiting
+            getWindow().setExitTransition(slide);
+            // For overlap of re-entering this activity and exiting from other activity
+            getWindow().setAllowReturnTransitionOverlap(false);  // Either specify here or in the theme
+        }
     }
 
     // Ripple effect of Touch feedback animation
