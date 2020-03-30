@@ -30,9 +30,10 @@
     <string name="author">Almasud</string>
     <string name="shared_element_transition_text">Activity transition is supported only in android version API 21 (Lollipop) and above.</string>
     <string name="circular_reveal_animation_text">Click on the screen to see the toggle effect of Circular Reveal Animation.</string>
-    <string name="enter_and_exit_transition">Enter &amp; exit transition: A type of Activity transition.\nEnter transition: How views in activity enters.\nExit transition: How views in activity exits.\nThey are three categories: Explode, Slide and Fade transition.\n</string>
+    <string name="enter_and_exit_transition">Enter &amp; exit transition: A type of Activity transition.\nEnter transition: How views in activity enters.\nExit transition: How views in activity exits.\nAndroid support three types of Enter &amp; Exit transition.\n</string>
     <string name="explode_transition_text">Explode transition: Moves views in or out from the center of the scene.\n</string>
     <string name="slide_transition_text">Slide transition: Moves views in or out from one of the edges of the scene.\n</string>
+    <string name="fade_transition_text">Fade transition: Adds or removes a view from the scene by changing it\'s opacity.\n</string>
     <string name="go_back">Go back</string>
     <string name="shared_element_transition">Shared Element Transition</string>
     <string name="enter_n_exit_transition">Enter &amp; Exit Transition</string>
@@ -43,4 +44,5 @@
     <string name="mahin_and_almasud">Mahin and Almasud</string>
     <string name="explode_transition">Explode Transition</string>
     <string name="slide_transition">Slide transition</string>
+    <string name="fade_transition">Fade transition</string>
 </resources>

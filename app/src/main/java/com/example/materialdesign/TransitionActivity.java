@@ -4,11 +4,13 @@ import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Explode;
+import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.view.Gravity;
 import android.view.Window;
+import android.view.animation.BounceInterpolator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -45,6 +47,7 @@ public class TransitionActivity extends AppCompatActivity {
                 new StringBuilder(getString(R.string.enter_and_exit_transition))
                         .append(getString(R.string.explode_transition_text))
                         .append(getString(R.string.slide_transition_text))
+                        .append(getString(R.string.fade_transition_text))
                         .append(" N.B: ")
                         .append(getString(R.string.shared_element_transition_text)));
 
@@ -90,6 +93,19 @@ public class TransitionActivity extends AppCompatActivity {
             case SlideXML:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.slide);
+                    getWindow().setEnterTransition(transition);
+                }
+                break;
+            case FadeJava:
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    Fade fade = new Fade();
+                    fade.setDuration(getResources().getInteger(R.integer.animation_duration_long));
+                    getWindow().setEnterTransition(fade);
+                }
+                break;
+            case FadeXML:
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.fade);
                     getWindow().setEnterTransition(transition);
                 }
                 break;

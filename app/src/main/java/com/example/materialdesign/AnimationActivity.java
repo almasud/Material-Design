@@ -56,8 +56,7 @@ public class AnimationActivity extends AppCompatActivity {
         }
     }
 
-    // Enter & Exit transition of Activity transition
-    // Explode transition of Enter & Exit transition
+    // Enter & Exit transition using Explode transition of Activity transition
     public void explodeTransitionByCode(View view) {
         ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
         Intent intent = new Intent(this, TransitionActivity.class);
@@ -78,7 +77,7 @@ public class AnimationActivity extends AppCompatActivity {
         startActivity(intent, optionsCompat.toBundle());
     }
 
-    // Slide transition of Enter & Exit transition
+    // Enter & Exit transition using Slide transition of Activity transition
     public void slideTransitionByCode(View view) {
         ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
         Intent intent = new Intent(this, TransitionActivity.class);
@@ -95,6 +94,27 @@ public class AnimationActivity extends AppCompatActivity {
         intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.SlideXML);
         intent.putExtra(Constant.KEY_ANIMATION_TITLE,
                 (CharSequence) new StringBuilder(getResources().getString(R.string.slide_transition))
+                        .append(" by ").append(getResources().getString(R.string.xml)));
+        startActivity(intent, optionsCompat.toBundle());
+    }
+
+    // Enter & Exit transition using Fade transition of Activity transition
+    public void fadeTransitionByCode(View view) {
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent intent = new Intent(this, TransitionActivity.class);
+        intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.FadeJava);
+        intent.putExtra(Constant.KEY_ANIMATION_TITLE,
+                (CharSequence) new StringBuilder(getResources().getString(R.string.fade_transition))
+                        .append(" by ").append(getResources().getString(R.string.java_code)));
+        startActivity(intent, optionsCompat.toBundle());
+    }
+
+    public void fadeTransitionByXML(View view) {
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent intent = new Intent(this, TransitionActivity.class);
+        intent.putExtra(Constant.KEY_ANIMATION_TYPE, Constant.TransitionType.FadeXML);
+        intent.putExtra(Constant.KEY_ANIMATION_TITLE,
+                (CharSequence) new StringBuilder(getResources().getString(R.string.fade_transition))
                         .append(" by ").append(getResources().getString(R.string.xml)));
         startActivity(intent, optionsCompat.toBundle());
     }
