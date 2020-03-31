@@ -34,7 +34,7 @@ public class SharedElementActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.sharedElementActivityToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getResources().getString(R.string.shared_element_transition));
+        getSupportActionBar().setSubtitle(getResources().getString(R.string.shared_element_transition));
         // Set the description text
         mViewBinding.descriptionActivitySharedTransition.setText(
                 new StringBuilder(getString(R.string.circular_reveal_animation_text))

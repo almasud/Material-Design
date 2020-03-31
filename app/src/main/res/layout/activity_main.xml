@@ -52,6 +52,13 @@
             android:text="@string/floating_label_for_edit_text"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/buttonAppBarCollapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_bar_layout_n_collapsing_toolbar_layout"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 
 </RelativeLayout>

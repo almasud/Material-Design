@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppMaterialTheme">
-        <activity android:name=".FloatingLabelEditTextActivity"></activity>
+        <activity android:name=".AppBarLayoutActivity"></activity>
+        <activity android:name=".AppBarCollapsingToolbarActivity" />
+        <activity android:name=".FloatingLabelEditTextActivity" />
         <activity android:name=".TransitionActivity" />
         <activity android:name=".SharedElementActivity" />
         <activity android:name=".RippleEffectActivity" />

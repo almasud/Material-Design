@@ -40,7 +40,7 @@ public class TransitionActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) mViewBinding.transitionActivityToolbar.getRoot();
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(toolbarTitle);
+        getSupportActionBar().setSubtitle(toolbarTitle);
 
         // Set the description text
         mViewBinding.transitionActivityDescription.setText(

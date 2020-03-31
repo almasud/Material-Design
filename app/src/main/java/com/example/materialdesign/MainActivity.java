@@ -36,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
         mViewBinding.buttonBasicComponents.setOnClickListener(view -> startActivity(new Intent(this, BasicComponentActivity.class)));
         mViewBinding.buttonAnimations.setOnClickListener(view -> startActivity(new Intent(this, AnimationActivity.class)));
         mViewBinding.buttonFloatingLabel.setOnClickListener(view -> startActivity(new Intent(this, FloatingLabelEditTextActivity.class)));
+        mViewBinding.buttonAppBarCollapsingToolbar.setOnClickListener(view -> startActivity(new Intent(this, AppBarCollapsingToolbarActivity.class)));
     }
 }

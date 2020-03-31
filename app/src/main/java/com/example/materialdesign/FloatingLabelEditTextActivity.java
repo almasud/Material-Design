@@ -21,7 +21,7 @@ public class FloatingLabelEditTextActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) mViewBinding.floatingLabelEditTextActivityToolbar.getRoot();
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getResources().getString(R.string.floating_label_for_edit_text));
+        getSupportActionBar().setSubtitle(getResources().getString(R.string.floating_label_for_edit_text));
 
         mViewBinding.buttonSignUp.setOnClickListener(view -> {
             signUp();

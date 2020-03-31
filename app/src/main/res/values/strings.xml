@@ -55,4 +55,8 @@
     <string name="password_filed_required">Password is mandatory</string>
     <string name="password_minimum_characters">Password required minimum 8 characters</string>
     <string name="validation_welcome_message">"Welcome! Your data is valid"</string>
+    <string name="app_bar_layout_text">"AppBarLayout: Used as direct child of Coordinator Layout respond to scroll event in sibling view.\nSibling view: Scroll vertically\nRecycler view\nNested sibling views\nAdd NestedScrollView for the smooth scrolling effect."</string>
+    <string name="collapsing_toolbar_layout">"CollapsingToolbarLayout: Used as direct child of AppBarLayout respond to scroll event and provide collapsing property to child views.\nSibling view: Scroll vertically\nToolbar\nImage view\nTabLayout."</string>
+    <string name="app_bar_layout_n_collapsing_toolbar_layout">"AppBarLayout\n&amp;\nCollapsingToolbar Layout"</string>
+    <string name="app_bar_layout">AppBarLayout</string>
 </resources>
