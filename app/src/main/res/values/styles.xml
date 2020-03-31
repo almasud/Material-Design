@@ -10,12 +10,15 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorError">@color/red_700</item>  <!-- For all error color -->
 
         <!-- When the bellow color is not defined then colorAccent is applied by default -->
         <item name="colorControlHighlight">#F44336</item>
-        <item name="colorButtonNormal">#f955f3</item>
         <item name="colorControlActivated">#0cf427</item>
+        <item name="colorControlNormal">#f955f3</item>
+        <item name="colorButtonNormal">#8BC34A</item>
 
         <!-- Customize Action mode (used in contextual menu) theme -->
         <item name="windowActionModeOverlay">true</item>
@@ -48,5 +51,10 @@
     <style name="MyActionbarTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/contextual_text</item>
     </style>
+
+    <!-- Customize text appearance for individual error message -->
+<!--    <style name="errorTextAppearance" parent="@android:style/TextAppearance">-->
+<!--        <item name="android:textColor">@color/red_700</item>-->
+<!--    </style>-->
 
 </resources>

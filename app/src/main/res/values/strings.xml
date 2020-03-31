@@ -50,4 +50,9 @@
     <string name="password">Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_up_here">Sign Up Here</string>
+    <string name="name_filed_required">Name is mandatory</string>
+    <string name="email_filed_required">Email is mandatory</string>
+    <string name="password_filed_required">Password is mandatory</string>
+    <string name="password_minimum_characters">Password required minimum 8 characters</string>
+    <string name="validation_welcome_message">"Welcome! Your data is valid"</string>
 </resources>
