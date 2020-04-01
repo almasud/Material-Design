@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollapsingToolbarActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorSecondary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleMarginStart="20dp"
+            app:contentScrim="@color/colorSecondary"
+            app:expandedTitleTextAppearance="@style/collapseTextAppearance"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/almasud"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarCollapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="10dp"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_search_white_24dp"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right"/>
+
+    <!-- Scrollable view - Can be NestedScrollView or RecyclerView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+            <include layout="@layout/item_nested_scrollview"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

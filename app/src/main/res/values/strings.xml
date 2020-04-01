@@ -59,4 +59,5 @@
     <string name="collapsing_toolbar_layout">"CollapsingToolbarLayout: Used as direct child of AppBarLayout respond to scroll event and provide collapsing property to child views.\nSibling view: Scroll vertically\nToolbar\nImage view\nTabLayout."</string>
     <string name="app_bar_layout_n_collapsing_toolbar_layout">"AppBarLayout\n&amp;\nCollapsingToolbar Layout"</string>
     <string name="app_bar_layout">AppBarLayout</string>
+    <string name="collapsing_toolbar">Collapsing toolbar</string>
 </resources>

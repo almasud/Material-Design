@@ -25,6 +25,7 @@ public class AppBarCollapsingToolbarActivity extends AppCompatActivity {
 
         // Set the button click event
         mViewBinding.buttonAppBarLayout.setOnClickListener(view -> startActivity(new Intent(this, AppBarLayoutActivity.class)));
+        mViewBinding.buttonCollapsingToolbar.setOnClickListener(view -> startActivity(new Intent(this, CollapsingToolbarActivity.class)));
     }
 
     @Override

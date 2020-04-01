@@ -24,6 +24,13 @@
             android:text="@string/app_bar_layout"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/buttonCollapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/collapsing_toolbar"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 
 </RelativeLayout>
