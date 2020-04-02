@@ -1,34 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/menuWifi"
-        android:title="Wifi"
-        android:checkable="true"
-        android:icon="@drawable/ic_wifi_gray_24dp"/>
+    <group
+        android:id="@+id/menu_communication"
+        android:checkableBehavior="single">
 
-    <item
-        android:id="@+id/menuWifiTethering"
-        android:title="Wifi Tethering"
-        android:checkable="true"
-        android:icon="@drawable/ic_wifi_tethering_gray_24dp"/>
+        <item
+            android:id="@+id/menuWifi"
+            android:title="@string/wifi"
+            android:checkable="true"
+            android:icon="@drawable/ic_wifi_gray_24dp"/>
 
-    <item
-        android:id="@+id/menuVPNLock"
-        android:title="VPN Lock"
-        android:checkable="true"
-        android:icon="@drawable/ic_vpn_lock_gray_24dp"/>
+        <item
+            android:id="@+id/menuWifiTethering"
+            android:title="@string/wifi_tethering"
+            android:checkable="true"
+            android:icon="@drawable/ic_wifi_tethering_gray_24dp"/>
 
-    <item
-        android:id="@+id/menuVoiceMail"
-        android:title="Voice mail"
-        android:checkable="true"
-        android:icon="@drawable/ic_voicemail_gray_24dp"/>
+        <item
+            android:id="@+id/menuVPNLock"
+            android:title="@string/vpn_lock"
+            android:checkable="true"
+            android:icon="@drawable/ic_vpn_lock_gray_24dp"/>
 
-    <item
-        android:id="@+id/menuVoiceChat"
-        android:title="Voice chat"
-        android:checkable="true"
-        android:icon="@drawable/ic_voice_chat_gray_24dp"/>
+        <item
+            android:id="@+id/menuVoiceMail"
+            android:title="@string/voice_mail"
+            android:checkable="true"
+            android:icon="@drawable/ic_voicemail_gray_24dp"/>
+
+        <item
+            android:id="@+id/menuVoiceChat"
+            android:title="@string/voice_chat"
+            android:checkable="true"
+            android:icon="@drawable/ic_voice_chat_gray_24dp"/>
+
+    </group>
+
+    <group
+        android:id="@+id/menu_action"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menuBackup"
+            android:title="@string/backup"
+            android:checkable="true"
+            android:icon="@drawable/ic_backup_gray_24dp"/>
+
+        <item
+            android:id="@+id/menuLanguage"
+            android:title="@string/language"
+            android:checkable="true"
+            android:icon="@drawable/ic_language_gray_24dp"/>
+
+        <item
+            android:id="@+id/menuHelp"
+            android:title="@string/help"
+            android:checkable="true"
+            android:icon="@drawable/ic_help_gray_24dp"/>
+
+    </group>
 
 </menu>

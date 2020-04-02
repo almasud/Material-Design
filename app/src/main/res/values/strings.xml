@@ -65,4 +65,11 @@
     <string name="author_nickname">Almasud</string>
     <string name="author_full_name">Abdullah Almasud</string>
     <string name="author_email">almasud.arm@gmail.com</string>
+    <string name="wifi">Wifi</string>
+    <string name="wifi_tethering">Wifi Tethering</string>
+    <string name="vpn_lock">VPN Lock</string>
+    <string name="voice_mail">Voice mail</string>
+    <string name="voice_chat">Voice chat</string>
+    <string name="backup">Backup</string>
+    <string name="language">Language</string>
 </resources>
