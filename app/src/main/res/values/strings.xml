@@ -72,4 +72,6 @@
     <string name="voice_chat">Voice chat</string>
     <string name="backup">Backup</string>
     <string name="language">Language</string>
+    <string name="communication">Communication</string>
+    <string name="action">Action</string>
 </resources>
