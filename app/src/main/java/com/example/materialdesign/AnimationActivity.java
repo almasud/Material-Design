@@ -27,7 +27,7 @@ public class AnimationActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) mViewBinding.animationActivityToolbar.getRoot();
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setSubtitle("Animation");
+        getSupportActionBar().setSubtitle(getResources().getString(R.string.animations));
 
         // Set a transition animation for this activity
         setupWindowAnimation();

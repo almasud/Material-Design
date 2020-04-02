@@ -19,8 +19,8 @@ public class BasicComponentActivity extends AppCompatActivity {
         setContentView(mViewBinding.getRoot());
 
         mToolbar = (Toolbar) mViewBinding.basicComponentToolbar.getRoot();
-        mToolbar.setTitle("Basic Components");
-        mToolbar.setSubtitle("by Abdullah Almasud");
+        mToolbar.setTitle(getResources().getString(R.string.basic_components));
+        mToolbar.setSubtitle(new StringBuilder("by ").append(getResources().getString(R.string.author_full_name)));
 
         mViewBinding.snackbar.setOnClickListener(view -> {
             Snackbar snackbar = Snackbar.make(mViewBinding.layoutBasicComponents, "Action performed successfully", Snackbar.LENGTH_LONG);

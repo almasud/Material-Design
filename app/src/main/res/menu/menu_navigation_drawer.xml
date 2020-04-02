@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuWifi"
+        android:title="Wifi"
+        android:checkable="true"
+        android:icon="@drawable/ic_wifi_gray_24dp"/>
+
+    <item
+        android:id="@+id/menuWifiTethering"
+        android:title="Wifi Tethering"
+        android:checkable="true"
+        android:icon="@drawable/ic_wifi_tethering_gray_24dp"/>
+
+    <item
+        android:id="@+id/menuVPNLock"
+        android:title="VPN Lock"
+        android:checkable="true"
+        android:icon="@drawable/ic_vpn_lock_gray_24dp"/>
+
+    <item
+        android:id="@+id/menuVoiceMail"
+        android:title="Voice mail"
+        android:checkable="true"
+        android:icon="@drawable/ic_voicemail_gray_24dp"/>
+
+    <item
+        android:id="@+id/menuVoiceChat"
+        android:title="Voice chat"
+        android:checkable="true"
+        android:icon="@drawable/ic_voice_chat_gray_24dp"/>
+
+</menu>

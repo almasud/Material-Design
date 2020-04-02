@@ -24,8 +24,8 @@ public class ContextualMenuActivity extends AppCompatActivity {
         setContentView(mViewBinding.getRoot());
 
         mToolbar = (Toolbar) mViewBinding.toolbar.getRoot();
-        mToolbar.setTitle("Standalone toolbar");
-        mToolbar.setSubtitle("by Abdullah Almasud");
+        mToolbar.setTitle(getResources().getString(R.string.standalone_toolbar));
+        mToolbar.setSubtitle(new StringBuilder("by ").append(getResources().getString(R.string.author_full_name)));
         mToolbar.inflateMenu(R.menu.menu_main);
         mToolbar.setOnMenuItemClickListener(item -> {
             Toast.makeText(this, item.getTitle() + " selected", Toast.LENGTH_SHORT).show();
@@ -50,7 +50,7 @@ public class ContextualMenuActivity extends AppCompatActivity {
     private class ContextualCallback implements ActionMode.Callback {
         @Override
         public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-            mode.getMenuInflater().inflate(R.menu.contextual_menu, menu);
+            mode.getMenuInflater().inflate(R.menu.menu_contextual, menu);
             return true;
         }
 

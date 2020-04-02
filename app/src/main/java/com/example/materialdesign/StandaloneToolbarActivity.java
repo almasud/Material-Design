@@ -21,8 +21,8 @@ public class StandaloneToolbarActivity extends AppCompatActivity {
 
         mToolbar = (Toolbar) mViewBinding.toolbar.getRoot();
         // Set the standalone toolbar
-        mToolbar.setTitle("Standalone toolbar");
-        mToolbar.setSubtitle("by Abdullah Almasud");
+        mToolbar.setTitle(getResources().getString(R.string.standalone_toolbar));
+        mToolbar.setSubtitle(new StringBuilder("by ").append(getResources().getString(R.string.author_full_name)));
         // Compatibility by Java code
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             mToolbar.setElevation(10f);

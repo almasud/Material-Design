@@ -10,55 +10,68 @@
         android:id="@+id/mainActivityToolbar"
         layout="@layout/toolbar"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/mainActivityToolbar"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_below="@+id/mainActivityToolbar">
 
-        <Button
-            android:id="@+id/buttonColorPalette"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/color_palette"
-            android:textAllCaps="false"/>
+            android:orientation="vertical"
+            android:layout_margin="20dp">
 
-        <Button
-            android:id="@+id/buttonToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/toolbar"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/buttonColorPalette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/color_palette"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/buttonBasicComponents"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/basic_components"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/buttonToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/toolbar"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/buttonAnimations"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/animations"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/buttonBasicComponents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/basic_components"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/buttonFloatingLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/floating_label_for_edit_text"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/buttonAnimations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/animations"
+                android:textAllCaps="false"/>
 
-        <Button
-            android:id="@+id/buttonAppBarCollapsingToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_bar_layout_n_collapsing_toolbar_layout"
-            android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/buttonFloatingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/floating_label_for_edit_text"
+                android:textAllCaps="false"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/buttonAppBarCollapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_bar_layout_n_collapsing_toolbar_layout"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/buttonNavigationDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_drawer"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

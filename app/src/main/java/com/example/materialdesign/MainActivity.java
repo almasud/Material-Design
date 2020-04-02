@@ -3,6 +3,7 @@ package com.example.materialdesign;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) mViewBinding.mainActivityToolbar.getRoot();
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(getResources().getString(R.string.example_of_material_design));
-        getSupportActionBar().setSubtitle("by Abdullah Almasud");
+        getSupportActionBar().setSubtitle(new StringBuilder("by ").append(getResources().getString(R.string.author_full_name)));
 
         // Check if we're running on android 5.0 (API 21) or higher
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -37,5 +38,6 @@ public class MainActivity extends AppCompatActivity {
         mViewBinding.buttonAnimations.setOnClickListener(view -> startActivity(new Intent(this, AnimationActivity.class)));
         mViewBinding.buttonFloatingLabel.setOnClickListener(view -> startActivity(new Intent(this, FloatingLabelEditTextActivity.class)));
         mViewBinding.buttonAppBarCollapsingToolbar.setOnClickListener(view -> startActivity(new Intent(this, AppBarCollapsingToolbarActivity.class)));
+        mViewBinding.buttonNavigationDrawer.setOnClickListener(view -> startActivity(new Intent(this, NavigationDrawerActivity.class)));
     }
 }

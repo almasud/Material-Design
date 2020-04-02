@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/almasud">
+
+    <ImageView
+        android:id="@+id/imageProfileNavigationDrawer"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_account_circle_gray_24dp"
+        android:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        tools:ignore="ContentDescription" />
+
+    <!-- Subtitle: 56dp -->
+    <!-- Name: Roboto Medium, 14sp, #FFFFFF -->
+    <!-- Email Address: Roboto Regular, 14sp, #FFFFFF -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/imageProfileNavigationDrawer"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/navigationDrawerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author_full_name"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/navigationDrawerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author_email"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppMaterialTheme">
-        <activity android:name=".CollapsingToolbarActivity"></activity>
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:theme="@style/AppMaterialTheme.TransparentStatusBarTheme" />
+        <activity android:name=".CollapsingToolbarActivity" />
         <activity android:name=".AppBarLayoutActivity" />
         <activity android:name=".AppBarCollapsingToolbarActivity" />
         <activity android:name=".FloatingLabelEditTextActivity" />

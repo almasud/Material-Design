@@ -23,7 +23,7 @@ public class ToolbarAsActionbarActivity extends AppCompatActivity {
 
         mToolbar = (Toolbar) mViewBinding.toolbar.getRoot();
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setSubtitle("Actionbar Toolbar");
+        getSupportActionBar().setSubtitle(getResources().getString(R.string.toolbar_as_actionbar));
     }
 
     @Override

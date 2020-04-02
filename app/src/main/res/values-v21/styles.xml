@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Only for API 21 (Lollipop) and above version -->
     <style name="AppMaterialTheme" parent="SuperMaterialTheme">
@@ -10,6 +10,13 @@
         <!-- Transition overlap - either specify here or in the activity -->
 <!--        <item name="android:windowAllowEnterTransitionOverlap">false</item>-->
 <!--        <item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+    </style>
+
+    <!-- Customize status bar color to use a specific activity (Navigation drawer) by declaring theme in the
+    manifest file. Note that it's need to declare android:fitsSystemWindows="true" in root
+     element of the specified activity (Navigation drawer) xml. -->
+    <style name="AppMaterialTheme.TransparentStatusBarTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
 </resources>
