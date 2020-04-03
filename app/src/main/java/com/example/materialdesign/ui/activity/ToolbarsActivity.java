@@ -1,4 +1,4 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

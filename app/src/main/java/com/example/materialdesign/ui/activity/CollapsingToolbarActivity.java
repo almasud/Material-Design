@@ -1,9 +1,10 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivityCollapsingToolbarBinding;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 

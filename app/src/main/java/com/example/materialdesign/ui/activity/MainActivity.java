@@ -1,13 +1,13 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,5 +39,6 @@ public class MainActivity extends AppCompatActivity {
         mViewBinding.buttonFloatingLabel.setOnClickListener(view -> startActivity(new Intent(this, FloatingLabelEditTextActivity.class)));
         mViewBinding.buttonAppBarCollapsingToolbar.setOnClickListener(view -> startActivity(new Intent(this, AppBarCollapsingToolbarActivity.class)));
         mViewBinding.buttonNavigationDrawer.setOnClickListener(view -> startActivity(new Intent(this, NavigationDrawerActivity.class)));
+        mViewBinding.buttonRecyclerNCarView.setOnClickListener(view -> startActivity(new Intent(this, RecycleNCardViewActivity.class)));
     }
 }

@@ -1,4 +1,4 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.ActionMode;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivityContextualMenuBinding;
 
 public class ContextualMenuActivity extends AppCompatActivity {

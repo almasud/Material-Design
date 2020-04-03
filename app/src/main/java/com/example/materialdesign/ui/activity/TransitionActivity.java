@@ -1,4 +1,4 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -10,12 +10,13 @@ import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.view.Gravity;
 import android.view.Window;
-import android.view.animation.BounceInterpolator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 
+import com.example.materialdesign.ui.uitils.Constant;
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivityTransitionBinding;
 
 public class TransitionActivity extends AppCompatActivity {

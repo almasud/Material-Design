@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
     <include
         android:id="@+id/mainActivityToolbar"
@@ -64,10 +64,17 @@
                 android:textAllCaps="false"/>
 
             <Button
-                android:id="@+id/buttonNavigationDrawer"
+            android:id="@+id/buttonNavigationDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_drawer"
+            android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/buttonRecyclerNCarView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/navigation_drawer"
+                android:text="@string/recycler_and_card_view"
                 android:textAllCaps="false"/>
 
         </LinearLayout>

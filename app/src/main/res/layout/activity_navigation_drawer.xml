@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:id="@+id/navigationDrawerLayout"
-    tools:context=".NavigationDrawerActivity">
+    tools:context=".ui.activity.NavigationDrawerActivity">
 
 <!-- If we are not using android:fitsSystemWindows="true" -->
 <!-- The <item name="android:statusBarColor"> -->

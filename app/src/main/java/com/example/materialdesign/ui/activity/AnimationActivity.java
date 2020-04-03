@@ -1,4 +1,4 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
 
+import com.example.materialdesign.ui.uitils.Constant;
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivityAnimationBinding;
 
 public class AnimationActivity extends AppCompatActivity {

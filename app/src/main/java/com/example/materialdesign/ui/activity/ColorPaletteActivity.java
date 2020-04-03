@@ -1,8 +1,10 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.materialdesign.R;
 
 public class ColorPaletteActivity extends AppCompatActivity {
 

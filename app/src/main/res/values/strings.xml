@@ -74,4 +74,5 @@
     <string name="language">Language</string>
     <string name="communication">Communication</string>
     <string name="action">Action</string>
+    <string name="recycler_and_card_view"><![CDATA[Recycler & Card view]]></string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivitySharedElementBinding;
 
 public class SharedElementActivity extends AppCompatActivity {

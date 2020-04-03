@@ -9,24 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppMaterialTheme">
+        <activity android:name=".ui.activity.RecycleNCardViewActivity"></activity>
         <activity
-            android:name=".NavigationDrawerActivity"
+            android:name=".ui.activity.NavigationDrawerActivity"
             android:theme="@style/AppMaterialTheme.TransparentStatusBarTheme" />
-        <activity android:name=".CollapsingToolbarActivity" />
-        <activity android:name=".AppBarLayoutActivity" />
-        <activity android:name=".AppBarCollapsingToolbarActivity" />
-        <activity android:name=".FloatingLabelEditTextActivity" />
-        <activity android:name=".TransitionActivity" />
-        <activity android:name=".SharedElementActivity" />
-        <activity android:name=".RippleEffectActivity" />
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".BasicComponentActivity" />
-        <activity android:name=".ContextualMenuActivity" />
-        <activity android:name=".ToolbarAsActionbarActivity" />
-        <activity android:name=".StandaloneToolbarActivity" />
-        <activity android:name=".ToolbarsActivity" />
-        <activity android:name=".ColorPaletteActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.CollapsingToolbarActivity" />
+        <activity android:name=".ui.activity.AppBarLayoutActivity" />
+        <activity android:name=".ui.activity.AppBarCollapsingToolbarActivity" />
+        <activity android:name=".ui.activity.FloatingLabelEditTextActivity" />
+        <activity android:name=".ui.activity.TransitionActivity" />
+        <activity android:name=".ui.activity.SharedElementActivity" />
+        <activity android:name=".ui.activity.RippleEffectActivity" />
+        <activity android:name=".ui.activity.AnimationActivity" />
+        <activity android:name=".ui.activity.BasicComponentActivity" />
+        <activity android:name=".ui.activity.ContextualMenuActivity" />
+        <activity android:name=".ui.activity.ToolbarAsActionbarActivity" />
+        <activity android:name=".ui.activity.StandaloneToolbarActivity" />
+        <activity android:name=".ui.activity.ToolbarsActivity" />
+        <activity android:name=".ui.activity.ColorPaletteActivity" />
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

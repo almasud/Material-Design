@@ -1,10 +1,11 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
+import com.example.materialdesign.R;
 import com.example.materialdesign.databinding.ActivityBasicComponentBinding;
 import com.google.android.material.snackbar.Snackbar;
 

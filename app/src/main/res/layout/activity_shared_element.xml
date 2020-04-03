@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:id="@+id/sharedTransitionReveal"
-    tools:context=".SharedElementActivity">
+    tools:context=".ui.activity.SharedElementActivity">
 
     <include
         android:id="@+id/sharedElementActivityToolbar"

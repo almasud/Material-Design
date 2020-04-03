@@ -1,4 +1,4 @@
-package com.example.materialdesign;
+package com.example.materialdesign.ui.uitils;
 
 public class Constant {
     public static final String KEY_ANIMATION_TYPE = "animation_type";
